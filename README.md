@@ -24,11 +24,13 @@ number_of_philosophers | time_to_die | time_to_eat | time_to_sleep | [number_of_
 - Filozoflar ölmemeye calismalidir. 
 --- 
 **Program'in loglarıyla alakalı:**
+
 	 ◦ timestamp_in_ms X has taken a fork
 	 ◦ timestamp_in_ms X is eating  
 	 ◦ timestamp_in_ms X is sleeping  
 	 ◦ timestamp_in_ms X is thinking
 	 ◦ timestamp_in_ms X died 
+  
 Buradaki **timestamp** kısmini olayın gerçekleştiği ani milisaniye cinsinden doldurun. **X** kisminda ise filozofun numarası yazmalıdır.
 
 > Programınızda data race olmamalıdır. !!!!!
