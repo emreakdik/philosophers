@@ -64,7 +64,7 @@ Buradaki **timestamp** kısmini olayın gerçekleştiği ani milisaniye cinsinde
 | External Funcs. | memset, printf, malloc, free, write, usleep, gettimeofday, pthread_create, pthread_detach, pthread_join, pthread_mutex_init, pthread_mutex_destroy, pthread_mutex_lock, pthread_mutex_unlock |
 | libft authorized | Hayir |
 | Description | Threadlerle ve mutexlerle filozoflar
-| | | 
+
 
 **Mandatory part icin ozel kurallar:**
 	- Her filozof bir thread olmalidir.
