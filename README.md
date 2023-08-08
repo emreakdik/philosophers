@@ -394,8 +394,11 @@ Mutex tek tuvaleti olan restorana benzetilebilir. Tuvalete gitmek için bankodan
 <a href="https://ibb.co/hdxmn6x"><img src="https://i.ibb.co/PWs6bLs/137924710-f11fbc8f-c92a-410e-bc53-db926ddeec7a.jpg" alt="137924710-f11fbc8f-c92a-410e-bc53-db926ddeec7a" border="0"></a>
 
 toilet (tuvalet) == paylaşılan kaynak
+
 tuvaleti kullanan müşteriler == süreç (thread)
+
 waiting line == kuyruk
+
 toilet key == paylaşılan kaynaklara erişmek için gereken herhangi bir nesne (mutex)
 
 Bir muteks, başlangıç değerleri 1 ve 0 olan bir değişkendir. 1 değeri, sayacın bir tuvalet anahtarına sahip olduğu anlamına gelir.
