@@ -65,6 +65,7 @@ Buradaki **timestamp** kısmini olayın gerçekleştiği ani milisaniye cinsinde
 | libft authorized | Hayir |
 | Description | Threadlerle ve mutexlerle filozoflar
 | | | 
+
 **Mandatory part icin ozel kurallar:**
 	- Her filozof bir thread olmalidir.
 	- Her filozof arasinda bir catal olmalidir. Eger birden fazla filozof varsa her filozofun saginda ve solunda catal olacak sekilde konumlandirilmalidir. Eğer tek bir filozof varsa tek bir çatal olmalıdır.
