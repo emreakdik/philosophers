@@ -413,15 +413,20 @@ Tüm tuvaletler kullanımdayken elektronik tabeladaki sayı 0 olur ve misafirler
 Başka bir deyişle, semaforlar ortak yönettikleri tek bir değeri kullanarak karşılıklı dışlamayı başarırlar.
 
 <a href="https://ibb.co/qxDbL5j"><img src="https://i.ibb.co/8XmFncs/137931999-9dcc483d-85f5-4de9-a2c9-327b13719521.jpg" alt="137931999-9dcc483d-85f5-4de9-a2c9-327b13719521" border="0"></a>
-Resimdeki Metin: Bir semafor, paylaşılan bir kaynağın eşzamanlı kullanıcı bayisini maksimum sayıya kadar kısıtlar. Konular kaynaga erisim talep edebilir (semaforu azaltarak) ve kaynağı kullanmayı bitirdiklerini bildirebilir(semaforu artırarak).
+
+Resimdeki Metin: Bir semafor, paylaşılan bir kaynağın eşzamanlı kullanıcı sayisini maksimum sayıya kadar kısıtlar. Konular kaynaga erisim talep edebilir (semaforu azaltarak) ve kaynağı kullanmayı bitirdiklerini bildirebilir(semaforu artırarak).
+
 <a href="https://ibb.co/VYfv8Q8"><img src="https://i.ibb.co/5hb5VnV/137932019-a937f327-9e33-40b2-a0dc-6c2cc8256574.jpg" alt="137932019-a937f327-9e33-40b2-a0dc-6c2cc8256574" border="0"></a>
 <a href="https://ibb.co/Hz5wjfY"><img src="https://i.ibb.co/VSfnscD/137932035-70f16c7f-9bc7-4343-aafd-102347435080.jpg" alt="137932035-70f16c7f-9bc7-4343-aafd-102347435080" border="0"></a>
 <a href="https://ibb.co/09kfGQD"><img src="https://i.ibb.co/2Mwjk5n/137932058-66cfd74e-e21d-4fc5-b74c-ceae3cc95b62.jpg" alt="137932058-66cfd74e-e21d-4fc5-b74c-ceae3cc95b62" border="0"></a>
 <a href="https://ibb.co/7tLbjK5"><img src="https://i.ibb.co/0yvQmrS/137932082-ddb7eed5-5671-407b-8ebb-2b8460502714.jpg" alt="137932082-ddb7eed5-5671-407b-8ebb-2b8460502714" border="0"></a>
 
 tuvalet == paylaşılan kaynak
+
 tuvaleti kullanan müşteriler == süreç (thread)
+
 bekleme hattı == kuyruk
+
 tabela sayısı == Paylaşılan kaynaklara erişebilecek süreç sayısını gösteren bazı değişkenler (semafor)
 
 Semafor, tamsayı değeri olan bir değişkendir. Sayı, paylaşılan kaynağa erişebilecek işlem sayısı anlamına gelir. Semaforu kullanmak için aşağıdaki yapıyı oluşturun.
