@@ -404,6 +404,7 @@ Mutex ve Semafor, paylaşılan kaynakların karşılıklı olarak dışlanmasın
 Mutex - bir süreç (iş parçacığı) tarafından sahip olunan bir nesneye dayalı karşılıklı dışlama tekniği. Semafor - mevcut paylaşılan kaynağa erişebilecek süreçlerin (iş parçacıklarının) sayısını gösteren bir sayma değişkeni değerinin yerleştirildiği karşılıklı dışlama tekniğidir.
 
 ## **Mutex**
+> Bu kisimda lavrenovemaria isimli github kullanicisinin anlatimini turkcelestirdim.
 
 Mutex tek tuvaleti olan restorana benzetilebilir. Tuvalete gitmek için bankodan bir anahtar almanız gerekir. Tezgâhta bir anahtar varsa, banyoda kimse yok demektir ve banyoya girmek için bu anahtarı kullanabilirsiniz. Diğer müşteriler tuvalete giremez ve tuvaleti kullanan müşteri işini bitirip anahtarı tezgaha iade edene kadar beklemek zorundadır.
 
