@@ -1,5 +1,20 @@
 # Philosophers
 
+## Icindekiler
+
+1. [Kurallar](https://github.com/emreakdik/philosophers/tree/main#kurallar)
+2. [Mandatory Part](https://github.com/emreakdik/philosophers/tree/main#mandatory-part)
+3. [Filozoflarin Aksam Yemegi](https://github.com/emreakdik/philosophers/tree/main#filozoflarin-aksam-yemegi)
+4. [Process Nedir?](https://github.com/emreakdik/philosophers/tree/main#process)
+5. [Process Durumları](https://github.com/emreakdik/philosophers/tree/main#process-durumlari) 
+6. [Thread Nedir?(Data race vb.)](https://github.com/emreakdik/philosophers/tree/main#thread-is-parcacigi-nedir)
+7. [Multithreading](https://github.com/emreakdik/philosophers/tree/main#multithreading)
+8. [Eszamanlilik ve Paralellik Nedir? (Concurrency vs Parallellism)](https://github.com/emreakdik/philosophers/tree/main#eszamanlilik-ve-paralellik-nedir-concurrency-vs-parallellism) 
+9. [Kullanilacak Fonksiyonlar](https://github.com/emreakdik/philosophers/tree/main#kullan%C4%B1lacak-fonksiyonlar)
+10. [Mutex ve Semaphore Arasındaki Farklar](https://github.com/emreakdik/philosophers/tree/main#mutex-ve-semaphore-aras%C4%B1ndaki-farklar) 
+11. [Mutex Nedir?](https://github.com/emreakdik/philosophers/tree/main#mutex)
+12. [Semaphore Nedir?](https://github.com/emreakdik/philosophers/tree/main#semaphore)
+    
 ## Kurallar
 
 Program asagidaki argumanlari almalidir:
