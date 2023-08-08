@@ -18,10 +18,12 @@ number_of_philosophers | time_to_die | time_to_eat | time_to_sleep | [number_of_
 
 ---
 
+
 - Her filozof 1'den baslayarak filozof sayisina kadar ki sayilarla numaralandirilir.
 - 1 numaralı filozof **number_of_philosophers** numarali filozofun yanında oturacak.
 - Bir filozof oldugunde log'u 10ms'ten daha kısa surede gösterilmelidir.
-- Filozoflar ölmemeye calismalidir. 
+- Filozoflar ölmemeye calismalidir.
+
 --- 
 **Program'in loglarıyla alakalı:**
 
