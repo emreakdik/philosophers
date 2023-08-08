@@ -67,9 +67,10 @@ Buradaki **timestamp** kısmini olayın gerçekleştiği ani milisaniye cinsinde
 
 
 **Mandatory part icin ozel kurallar:**
-	- Her filozof bir thread olmalidir.
-	- Her filozof arasinda bir catal olmalidir. Eger birden fazla filozof varsa her filozofun saginda ve solunda catal olacak sekilde konumlandirilmalidir. Eğer tek bir filozof varsa tek bir çatal olmalıdır.
-	- Filozofların çatalları çoğaltmasını önlemek için çatal durumunu her biri için bir muteks ile korumalısınız.
+
+- Her filozof bir thread olmalidir.
+- Her filozof arasinda bir catal olmalidir. Eger birden fazla filozof varsa her filozofun saginda ve solunda catal olacak sekilde konumlandirilmalidir. Eğer tek bir filozof varsa tek bir çatal olmalıdır.
+- Filozofların çatalları çoğaltmasını önlemek için çatal durumunu her biri için bir muteks ile korumalısınız.
 
 ## Filozoflarin Aksam Yemegi
 Yazan : Şadi Evren ŞEKER
