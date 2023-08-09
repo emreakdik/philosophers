@@ -14,6 +14,7 @@
 10. [Mutex ve Semaphore Arasındaki Farklar](https://github.com/emreakdik/philosophers/tree/main#mutex-ve-semaphore-aras%C4%B1ndaki-farklar) 
 11. [Mutex Nedir?](https://github.com/emreakdik/philosophers/tree/main#mutex)
 12. [Semaphore Nedir?](https://github.com/emreakdik/philosophers/tree/main#semaphore)
+13. [Sık Kullanılan Fonksiyonlar ve Türler](https://github.com/emreakdik/philosophers/tree/main#s%C4%B1k-kullan%C4%B1lan-fonksiyonlar-ve-t%C3%BCrler)
     
 ## Kurallar
 
