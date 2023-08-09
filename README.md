@@ -448,3 +448,35 @@ bekleme hattı == kuyruk
 tabela sayısı == Paylaşılan kaynaklara erişebilecek süreç sayısını gösteren bazı değişkenler (semafor)
 
 Semafor, tamsayı değeri olan bir değişkendir. Sayı, paylaşılan kaynağa erişebilecek işlem sayısı anlamına gelir. Semaforu kullanmak için aşağıdaki yapıyı oluşturun.
+
+## Sık Kullanılan Fonksiyonlar ve Türler
+
+### pthread_t Türü
+Bu tür isletim sisteminden isletim sistemine degisiklik göstermektedir. Cogumuz okuldaki iMac'lerde calistigimiz icin Mac OS uzerinden anlatım gerçekleştireceğim.
+
+Degiskenin ic yüzüne geçiş yaptigimizda kodun aslinda bir yapı typedef'i oldugunu goruyoruz. Bu yapı da isletim sisteminden isletim sistemine değişmektedir. 
+
+Aslında bu yapıya thread tanimlayicisi da denebilir. pthread_create fonksiyonu aslinda kendisine verilen değişkenin adresine yeni bir thread tanimlayici oturtur. 
+
+Okuldaki bilgisayarda (Mac OS) yapı su sekilde:
+```c
+struct  _opaque_pthread_t {
+
+long  __sig;
+
+struct  __darwin_pthread_handler_rec  *__cleanup_stack;
+
+char  __opaque[__PTHREAD_SIZE__];
+
+};
+```
+
+**opaque**: bu değişkeni ismini biraz arastirinca aslında bir konsept oldugunu öğrendim. icerigi bilinmeyen ve butun olarak kabul edilen stringlere bu isim verilerek, bu durum belli ediliyormuş. o yüzden opaque hakkında bilgi bulamadım.
+
+**cleanup_stack**: bu değişkeni thread'in kapatilacagi zaman temizlenme islemleri icin gereken yapıyı tutmakta.
+
+**sig**: thread tanimlayicisinin geçerliliğini belirten bir imzadır. Thread islemlerinde bu imzanın doğruluğu kontrol edilir. Kisisel yorum olarak, daha çok bir izin ve geçerlilik sistemi gibi duruyor.
+
+**pthread_size**: Mac OS da kaynak kodunda 8 olarak ayarlanmis. Isletim sistemlerinde degisiklik gösterebiliyor, 4 ve 8 byte olarak değişebiliyor.
+
+**thread_mutex_t turunun de ic yüzü bu sekilde sadece iceride cleanup_stack değişkeni yok.**
