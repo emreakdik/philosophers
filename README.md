@@ -406,7 +406,7 @@ Mutex - bir süreç (iş parçacığı) tarafından sahip olunan bir nesneye day
 ## **Mutex**
 > Bu kisimda lavrenovemaria isimli github kullanicisinin anlatimini turkcelestirdim.
 
-Mutex tek tuvaleti olan restorana benzetilebilir. Tuvalete gitmek için bankodan bir anahtar almanız gerekir. Tezgâhta bir anahtar varsa, banyoda kimse yok demektir ve banyoya girmek için bu anahtarı kullanabilirsiniz. Diğer müşteriler tuvalete giremez ve tuvaleti kullanan müşteri işini bitirip anahtarı tezgaha iade edene kadar beklemek zorundadır.
+Mutex tek tuvaleti olan restorana benzetilebilir. Tuvalete gitmek için tezgahtan bir anahtar almanız gerekir. Tezgâhta bir anahtar varsa, banyoda kimse yok demektir ve banyoya girmek için bu anahtarı kullanabilirsiniz. Diğer müşteriler tuvalete giremez ve tuvaleti kullanan müşteri işini bitirip anahtarı tezgaha iade edene kadar beklemek zorundadır.
 
 <a href="https://ibb.co/X7nPdSz"><img src="https://i.ibb.co/pfHTsJ3/137924693-f92898f0-5d13-4377-93c5-481a9f731eed.jpg" alt="137924693-f92898f0-5d13-4377-93c5-481a9f731eed" border="0"></a>
 <a href="https://ibb.co/hdxmn6x"><img src="https://i.ibb.co/PWs6bLs/137924710-f11fbc8f-c92a-410e-bc53-db926ddeec7a.jpg" alt="137924710-f11fbc8f-c92a-410e-bc53-db926ddeec7a" border="0"></a>
