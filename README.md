@@ -481,3 +481,18 @@ char  __opaque[__PTHREAD_SIZE__];
 **pthread_size**: Mac OS da kaynak kodunda 8 olarak ayarlanmis. Isletim sistemlerinde degisiklik gösterebiliyor, 4 ve 8 byte olarak değişebiliyor.
 
 **thread_mutex_t turunun de ic yüzü bu sekilde sadece iceride cleanup_stack değişkeni yok.**
+### pthread_mutex_lock()
+
+Bu fonksiyon, bir mutex (kilit) adını verdiğimiz senkronizasyon mekanizması ile ilişkilidir. Mutex, belirli bir kod bloğunun aynı anda sadece bir thread tarafından çalıştırılmasını sağlamak için kullanılır. Yani, bu kod bloğunu bir thread ele aldığında, diğer threadlerin aynı kod bloğunu çalıştırması engellenir. Bu şekilde, paylaşılan kaynaklara erişimdeki eşzamanlılık sorunları çözülebilir.
+
+```c
+void change(int val) {
+  pthread_mutex_lock(&mutex); // Mutex kilidi alınır
+  paylasilan_degisken = val;
+  pthread_mutex_unlock(&mutex); // Mutex kilidi bırakılır
+}
+```
+
+Farklı threadlerin aynı anda aynı kaynağa erişmesini engellemek için mutex kullanımı oldukça önemlidir. Bu sayede race conditions gibi hataların önüne geçilebilir ve programın güvenliği artırılabilir.
+
+pthread_mutex_lock() fonksiyonu, bir thread mutex kilidi almaya çalışırken (yani kilit zaten başka bir thread tarafından tutuluyorsa) beklemektedir. Bu beklemeye "blocking" denir, çünkü thread bu fonksiyon çağrısında kilit alana kadar beklemeye devam eder.
