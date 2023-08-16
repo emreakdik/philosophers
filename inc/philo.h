@@ -53,7 +53,7 @@ struct					s_info
 	time_t t_to_eat;             // filozofun yemek icin gerekli zaman
 	time_t t_to_sleep;           // filozofun uyumak icin gerekli zaman
 	time_t start_time;           // programin basladigi zaman
-	pthread_mutex_t *forks;      // sol catallarin mutexleri
+	pthread_mutex_t *forks;      // tum catallar icin mutex array
 	pthread_mutex_t print_mutex; // mutexlerin dogru print edilmesi icin
 };
 
