@@ -1,9 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: yakdik <yakdik@student.42kocaeli.com.tr    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/08/17 19:31:22 by yakdik            #+#    #+#              #
+#    Updated: 2023/10/09 01:28:54 by yakdik           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = philo
 
 CC = @gcc
 RM = @rm -f
 ADD_FLAGS = -pthread
-FLAGS = -g -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 
 YELLOW = \033[33;49;1m
 CYAN = \033[33;36;1m
@@ -13,7 +25,7 @@ INC_PATH = inc
 OBJ_PATH = obj
 SRC_PATH = src
 
-SRC = main.c monitor_philo.c utils.c
+SRC = main.c monitor_philo.c utils.c init_info_helper.c
 OBJ = $(addprefix $(OBJ_PATH)/, $(addsuffix .o, $(notdir $(basename $(SRC)))))
 
 default: makedir all

@@ -1,4 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yakdik <yakdik@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/17 19:31:19 by yakdik            #+#    #+#             */
+/*   Updated: 2023/10/09 01:25:57 by yakdik           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/philo.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
 
 time_t	get_time(void)
 {
@@ -8,15 +23,24 @@ time_t	get_time(void)
 	return ((time.tv_usec / 1000 + time.tv_sec * 1000));
 }
 
-void	print(t_philo philo, char *str)
+void	print_and_kill(t_philo philo, char *str, int kill)
 {
-	if (philo.info->is_anyone_died == false)
+	if (kill)
+	{
+		pthread_mutex_lock(&philo.info->is_anyone_died_m);
+		philo.info->is_anyone_died = true;
+		pthread_mutex_unlock(&philo.info->is_anyone_died_m);
+	}
+	pthread_mutex_lock(&philo.info->is_anyone_died_m);
+	if ((philo.had_enough == false && philo.info->is_anyone_died == false)
+		|| kill == 1)
 	{
 		pthread_mutex_lock(&philo.info->print_mutex);
-		printf("%ld %d %s\n", get_time() - philo.info->start_time, philo.id,
+		printf("%ld %d %s\n", get_time() - philo.info->start_time, philo.id + 1,
 			str);
 		pthread_mutex_unlock(&philo.info->print_mutex);
 	}
+	pthread_mutex_unlock(&philo.info->is_anyone_died_m);
 }
 
 void	sensitive_usleep(time_t time)
